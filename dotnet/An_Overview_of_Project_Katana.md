@@ -2,7 +2,7 @@
 
 The net result was a mature, feature-rich runtime and developer programming model.
 Firstly, the framework was monolithic, with logically disparate units of functionality being tightly coupled in the same System.Web.dll assembly.
-Sencondly, ASP.NET was was included as a part of the large .NET Framework, which meant that the time between releases was on the order of years.
+Sencondly, ASP.NET was included as a part of the large .NET Framework, which meant that the time between releases was on the order of years.
 
 built ASP.NET Web API such that it had no dependencies on any of the core framework types found in System.Web.dll, This enabled two things:
 
@@ -21,20 +21,21 @@ The resulting abstraction consists of two core elements:
 The environment dictionary is defined as follows:
 ``
 IDictionary<String, Object>
-    ``
-    the required dictionary keys for an HTTP request, for example:
-    - owin.RequestBody (A Stream with the request body, if any. Stream.Null MAY be used as a placeholder if there is no request body)
-    - owin.RequestHeaders (A IDictionary<String, String[]>
-        of request header)
-        - owin.RequestMethod (A string containing the HTTP request method of the request)
-        - owin.RequestPath (A string containing the request path. The path MUST be relative the "root" of the application delegate)
-        - owin.RequestPathBase (A string containing the portion of the request path corresponding the "root" of the application delegate)
-        - owin.RequestProtocol (A string containing the protocol name and version)
-        - owin.RequestQueryString (A string containing the query string component of the HTTP request URI, without the leading "?". The value MAY be an empty string)
-        - owin.RequestScheme (A string containing the URI scheme used for the request)
-        2. The application delegate.This is a function signature which serves as the primary interface between all components in an OWIN application. The definition for the application delegate is as follows:
-        ``
-        Func<IDictionary<String, Object>, Task>;
+``
+
+the required dictionary keys for an HTTP request, for example:
+- owin.RequestBody (A Stream with the request body, if any. Stream.Null MAY be used as a placeholder if there is no request body)
+- owin.RequestHeaders (A IDictionary<String, String[]>
+    of request header)
+- owin.RequestMethod (A string containing the HTTP request method of the request)
+- owin.RequestPath (A string containing the request path. The path MUST be relative the "root" of the application delegate)
+- owin.RequestPathBase (A string containing the portion of the request path corresponding the "root" of the application delegate)
+- owin.RequestProtocol (A string containing the protocol name and version)
+- owin.RequestQueryString (A string containing the query string component of the HTTP request URI, without the leading "?". The value MAY be an empty string)
+- owin.RequestScheme (A string containing the URI scheme used for the request)
+2. The application delegate.This is a function signature which serves as the primary interface between all components in an OWIN application. The definition for the application delegate is as follows:
+``
+Func<IDictionary<String, Object>, Task>;
 ``
 
 OWIN is a specification. Its goal is not to be the next Web framework, but rather a specification for how Web frameworks and Web servers interact.
