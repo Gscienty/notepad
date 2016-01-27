@@ -6,8 +6,8 @@ Sencondly, ASP.NET was was included as a part of the large .NET Framework, which
 
 built ASP.NET Web API such that it had no dependencies on any of the core framework types found in System.Web.dll, This enabled two things:
 
-1. it meant that ASP.NET Web API could evolve in a completely self-contained manner.
-2. because there were no external dependencies to System.Web.dll, and therefore no dependencies to IIS, ASP.NET Web API included th capability to run in a custom host(for example, a console application, Windows service, etc.)
+1. It meant that ASP.NET Web API could evolve in a completely self-contained manner.
+2. Because there were no external dependencies to System.Web.dll, and therefore no dependencies to IIS, ASP.NET Web API included th capability to run in a custom host(for example, a console application, Windows service, etc.)
 
 A modern Web application generally supports static file serving, dynamic page generation, Web API, and more recently real-time/push notifications. Expecting that each of these services should be run and managed independently was simply not realistic.
 
@@ -80,10 +80,12 @@ install-package OwinHost
 #Katana Architecture#
 The Katana component architecture divides an application into four logical layers, as depicted below: *host,server,middleware,application*. The component architecture is factored in such a way that implementations of these layers can be easily substituted, in many cases, without requiring recompilation of the application.
 
-|Application |
-|Middleware  |
-|Server      |
-|Host        |
+||
+|-|
+|Application|
+|Middleware|
+|Server|
+|Host|
 
 ##Host##
 Responsible:
