@@ -85,7 +85,7 @@ The Katana component architecture divides an application into four logical layer
 |Middleware  |
 |Server      |
 |Host        |
-
+|------------|
 ##Host##
 Responsible:
 
