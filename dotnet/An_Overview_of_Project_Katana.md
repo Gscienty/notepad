@@ -80,12 +80,11 @@ install-package OwinHost
 #Katana Architecture#
 The Katana component architecture divides an application into four logical layers, as depicted below: *host,server,middleware,application*. The component architecture is factored in such a way that implementations of these layers can be easily substituted, in many cases, without requiring recompilation of the application.
 
-|------------|
 |Application |
 |Middleware  |
 |Server      |
 |Host        |
-|------------|
+
 ##Host##
 Responsible:
 
