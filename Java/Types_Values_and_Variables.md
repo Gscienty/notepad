@@ -52,3 +52,13 @@ There are four kinds of reference types:
 - type variables
 - array types
 
+###Objects###
+
+An object is a class instance or an array.
+
+The reference values are pointers to these objects, and a special null reference, which refers to no object.
+
+There may be many references to the same object. Most objects have state, stored in the fields of objects that are instances of classes or in the variables that are the components of an array object.  
+If two variables contain references to the same object, the state of the object can be modified using one variable's reference to the object, and then the altered state can be observed through the reference in the other variable.
+
+Each object is associated with a monitor, which is used by *synchronized* methods and the *syncchronized* statement to provide control over concurrent access to state by multiple threads.
