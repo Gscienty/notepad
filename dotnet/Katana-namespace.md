@@ -15,4 +15,4 @@
 核心：   
 **AppBuilder类**，实现IAppBuilder接口的标准类  
 
-- 属性：Properties， 包含在处理过程阶段，经组件添加、修改、查看的的所有属性。
+- 属性：**IDictionary<string, object> Properties**， 包含在处理过程阶段，经组件添加、修改、查看的的所有属性。可理解为
