@@ -11,4 +11,4 @@
 
 ##[Microsoft.Owin.Builder](https://msdn.microsoft.com/zh-cn/library/microsoft.owin.builder(v=vs.111).aspx)##
 该命名空间包含应用程序生成器类
-IAppBuilder：连接中间件，请求流处理管道
+IAppBuilder：关键点，需要总结
