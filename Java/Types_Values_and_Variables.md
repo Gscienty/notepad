@@ -28,3 +28,7 @@ The string concatenation operator +, which, when given a String operand and an i
 
 If an integer operator other than a shift operator has at least one operand of type *long*, then the operation is carried out using 64-bit precision, and the result of the numerical operator is of type *long*. If the other operand is not *long*, it is first widened to type long by numeric promotion.
 
+###Floating-Point Types, Formats, and Values###
+
+The floating-point types are *float* and *double*, which are conceptually associated with the single-precision 32-bit and double-precision 64-bit format IEEE 754 values and operations as specified in IEEE Standard for Binary Floating-Point Arithmetic, ANSI/IEEE Standard 754-1985(IEEE, New York).
+
