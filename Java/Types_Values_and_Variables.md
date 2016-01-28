@@ -1,0 +1,3 @@
+The Java programming language is a *statically typed* language, which means that every variable and every expression has a type that is known at compile time.
+
+The Java programming language is also a strongly typed language, bacause types limit the values that a variable can hold or that an expression can produce, limit the operations supported on those values, and determine the meaning of the operations. Strong static typing helps detect errors at compile time.
