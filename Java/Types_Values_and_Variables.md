@@ -12,6 +12,7 @@ The types of the Java programming language are divided into two categories:**pri
 The values of a reference type are references to objects. All objects, including arrays, support the methods of class *Object*.
 
 ##Primitive Types and Values##
+
 Primitive values do not share state with other primitive values.
 
 The string concatenation operator +, which, when given a String operand and an integral operand, whill convert the integral operand to a String representing its value in decimal form, and then produce a newly created String that is the concatenation of the two strings.
@@ -33,3 +34,12 @@ If an integer operator other than a shift operator has at least one operand of t
 The floating-point types are *float* and *double*, which are conceptually associated with the single-precision 32-bit and double-precision 64-bit format IEEE 754 values and operations as specified in IEEE Standard for Binary Floating-Point Arithmetic, ANSI/IEEE Standard 754-1985(IEEE, New York).
 
 The IEEE 754 standard includes not only positive and negative numbers that consist of a sign and magnitude, but also positive and negative zeros, positive and negative *infinities*, and special *Not-a-Number* values. A NaN value is used to represent the result of certain invalid operations.
+
+Positive zero and negative zero compare equal.
+
+##The Boolean Type and Boolean Values##
+
+An Integer or floating-point expression *x* can be converted to a boolean value, following the C language convention that any nonzero value is true.
+
+An object reference *obj* can be converted to a boolean value, following the C language convertion that any reference other than *null* is true.
+
