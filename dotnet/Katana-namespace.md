@@ -10,5 +10,5 @@
 6. 表示OWIN请求实体以及相应实体
 
 ##[Microsoft.Owin.Builder](https://msdn.microsoft.com/zh-cn/library/microsoft.owin.builder(v=vs.111).aspx)##
-该命名空间包含应用程序生成器类
-IAppBuilder：关键点，需要总结获知其意义。
+该命名空间包含web应用生成类
+
