@@ -12,6 +12,7 @@
 ##[Microsoft.Owin.Builder](https://msdn.microsoft.com/zh-cn/library/microsoft.owin.builder(v=vs.111).aspx)##
 该命名空间包含web应用生成类
 
-核心： AppBuilder类，实现IAppBuilder接口的标准类
+核心：   
+**AppBuilder类**，实现IAppBuilder接口的标准类  
 
-
+- 属性：Properties， 包含在处理过程阶段，经组件添加、修改、查看的的所有属性。
