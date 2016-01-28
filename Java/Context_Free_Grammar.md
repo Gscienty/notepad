@@ -1,4 +1,4 @@
-##Context-free Grammars##
+#Context-free Grammars#
 A context-free grammar consists of a number of *productions*. Each production has a abstract symbol called a *nonterminal* as its **left-hand side**, and a sequence of one or more nonterminal and terminal symbols as its **right-hand side**.  
 The terminal symbols are drawn from a specified alphabet.
 
