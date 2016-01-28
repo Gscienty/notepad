@@ -37,9 +37,18 @@ The IEEE 754 standard includes not only positive and negative numbers that consi
 
 Positive zero and negative zero compare equal.
 
-##The Boolean Type and Boolean Values##
+###The Boolean Type and Boolean Values###
 
 An Integer or floating-point expression *x* can be converted to a boolean value, following the C language convention that any nonzero value is true.
 
 An object reference *obj* can be converted to a boolean value, following the C language convertion that any reference other than *null* is true.
+
+##Reference Types and Values##
+
+There are four kinds of reference types:
+
+- class types
+- interface types
+- type variables
+- array types
 
