@@ -88,3 +88,5 @@ Two reference types are the *same run-time type* if:
 
 ##Parameterized Types##
 
+A class or interface declaration that is generic defines a set of parameterized types.
+
