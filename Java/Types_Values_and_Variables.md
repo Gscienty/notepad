@@ -86,3 +86,5 @@ Two reference types are the *same run-time type* if:
 - They are both class or both interface types, are defined by the same class loader, and hav the same binary name, in which case they are sometimes said to be the *same run-time class* or the *same run-time interface*.
 - They are both array types, and their component types are the same run-time type.
 
+##Parameterized Types##
+
