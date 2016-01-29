@@ -62,3 +62,27 @@ There may be many references to the same object. Most objects have state, stored
 If two variables contain references to the same object, the state of the object can be modified using one variable's reference to the object, and then the altered state can be observed through the reference in the other variable.
 
 Each object is associated with a monitor, which is used by *synchronized* methods and the *syncchronized* statement to provide control over concurrent access to state by multiple threads.
+
+###The Class *Object*###
+
+The class Object is a superclass of all other classes.
+
+- The method *clone* is used to make a duplicate of an object.
+- The method *equals* defines a notion of object equality, which is based on value, not reference, comparison.
+- The method *finalize* is run just before an object is destroyed.
+- The method *getClass* returns the *Class* object that represents the class of the object.  
+A *Class* object exists for each reference type. It can be used, for example, to discover the fully qualified name of a class, its members, its immediate superclass, and any interfaces that it implements.  
+A class method that is declared *synchronized* synchronizes on the monitor associated with the *Class* object of the class.
+- The method *hashCode*.
+- The methods *wait,* *notify*, and *notifyAll* are used in concurrent programming using threads.
+- The method *toString* returns a *String* representation of the object.
+
+###When Reference Types Are the Same###
+
+Two reference types are the *same compile-time type* if they have the same binary name and their type arguments, if any, are the same, applying this definition recursively.
+
+Two reference types are the *same run-time type* if:
+
+- They are both class or both interface types, are defined by the same class loader, and hav the same binary name, in which case they are sometimes said to be the *same run-time class* or the *same run-time interface*.
+- They are both array types, and their component types are the same run-time type.
+
